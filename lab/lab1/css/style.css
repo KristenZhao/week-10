@@ -7,15 +7,16 @@ body {
 .map {
     position: absolute;
     right: 0px;
-    left: 340px;
+    /*left: 340px;*/
     height: 100%;
+    width: 50%;
     top: 0;
 }
 
 .sidebar {
     position: absolute;
     left: 0px;
-    width: 340px;
+    width: 50%;
     top: 0;
     bottom: 0;
     overflow-y: auto;
@@ -26,6 +27,10 @@ body {
 .item {
     padding: 10px;
     background-color: #eee;
+    width: 60%;
+    position: static;
+    right:0px;
+    float: right;
 }
 
 .item:not(:last-child) {
@@ -40,9 +45,10 @@ body {
 
 .sort {
     position: fixed;
+    /*float: right;*/
     bottom: 0;
-    left: 0;
-    width: 340px;
+    right: 0;
+    width: 100%;
     background-color: #fff;
     padding: 20px;
 }
@@ -56,15 +62,19 @@ body {
 }
 
 .sidebar nav.navbar-default {
+    width: 60%;
+    position: static;
+    float: right;
+    right:0px;
     border: 0;
     border-radius: 0;
     background-color: #fff;
     border-bottom: 1px solid #eee;
-    margin: -14px -20px 20px;
+    margin: -22px -2px 20px;
     padding: 10px 20px 15px;
 }
 
-.navbar-brand {
+.navbar-header {
     font-size: 14px;
     font-weight: bold;
 }
