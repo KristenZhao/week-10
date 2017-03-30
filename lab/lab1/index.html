@@ -36,8 +36,8 @@
                 Add New <span class="caret"></span>
               </button>
               <ul class="dropdown-menu">
-                <li><a href="#">View History</a></li>
-                <li><a href="#">Email All Manufacturers</a></li>
+                <li><a href="#" class="text-right">View History</a></li>
+                <li><a href="#" class="text-right">Email All Manufacturers</a></li>
               </ul>
             </div>
           </div>
@@ -87,14 +87,108 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            <h class="modal-title" id="myModalLabel">Manufacturer</h4>
           </div>
           <div class="modal-body">
-            ...
+            <!-- alert -->
+            <div class="alert alert-danger" role="alert">
+              <p>This Manufacterer has low inventory</p>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <p class='h4'><strong>Tandy’s Basketweavers</strong></p>
+                </div>
+                <div class="col-md-6" align='right'>
+                  <!-- button group -->
+                  <div class="btn-group" role="group" aria-label="...">
+                    <button type="button" class="btn btn-default">Edit</button>
+                    <button type="button" class="btn btn-default">Delete</button>
+                    <button type="button" class="btn btn-default">Export</button>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <p class="h5"><strong>Address</strong></p>
+                  <p>490 Esteem Drive, Philadelphia, PA 19143</p>
+                </div>
+                <div class="col-md-3">
+                  <p class=h5><strong>Contact</strong></p>
+                  <p>Dave Javies
+                    Senior Weaver
+                    jd@tbw.com</p>
+                </div>
+                <div class="col-md-5">
+                  <h1 class=h1 align="middle">324</h1>
+                  <p>Baskets sold in past 7 days</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <p class="h5"><strong>Sales</strong</p>
+                  <!-- Table -->
+                  <table class="table">
+                    <tbody>
+                      <tr>
+                        <!-- <td>
+                          <p><strong>First Name</strong></p>
+                        </td>
+                        <td>
+                          <p><strong>Last Name</strong></p>
+                        </td>
+                        <td>
+                          <p><strong>Purchase</strong></p> -->
+                        <td>
+                          <p><strong>First Name</strong></p>
+                        </td>
+                        <td>
+                          <p><strong>Last Name</strong></p>
+                        </td>
+                        <td>
+                          <p><strong>Purchases</strong></p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p>Mark</p>
+                        </td>
+                        <td>
+                            <p>Otto</p>
+                        </td>
+                        <td>
+                            <p>Fruit Basket</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                            <p>Jacob</p>
+                        </td>
+                        <td>
+                            <p>Thornton</p>
+                        </td>
+                        <td>
+                            <p>Gift Basket</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p>Larry</p>
+                        </td>
+                        <td>
+                          <p>the Bird</p>
+                        </td>
+                        <td>
+                          <p>Easter Basket</p>
+                        </td>
+                      </tr>
+                    </tbody
+                  </table>
+              </div>
+            </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
           </div>
         </div>
       </div>
