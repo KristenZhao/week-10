@@ -48,9 +48,11 @@ body {
     /*float: right;*/
     bottom: 0;
     right: 0;
-    width: 100%;
+    left: 20%;
+    padding: 10px;
+    margin-left: -5px;
+    /*width: inherit;*/
     background-color: #fff;
-    padding: 20px;
 }
 
 .sort-option {
@@ -71,7 +73,7 @@ body {
     background-color: #fff;
     border-bottom: 1px solid #eee;
     margin: -22px -2px 20px;
-    padding: 10px 20px 15px;
+    padding: 10px 5px 15px;
 }
 
 .navbar-header {
@@ -79,6 +81,19 @@ body {
     font-weight: bold;
 }
 
+nav.navbar1 {
+  position: absolute;
+  width: 18%;
+  left: 0px;
+  height: 100%;
+  padding: 8px;
+  background-color: #50a0ce;
+}
+
+.dropdown-menu {
+  position: absolute;
+  right: 0px;
+}
 /* =============
 Media Queries
 ============= */

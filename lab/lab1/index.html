@@ -7,21 +7,40 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/leaflet.css" />
     <!-- Choose a frontend framework CSS file: -->
-    <!-- <link rel="stylesheet" href="css/bootstrap.css" /> -->
-    <!-- <link rel="stylesheet" href="css/material.css" /> -->
-    <!-- <link rel="stylesheet" href="css/assembly.css" /> -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/material.css" />
+    <link rel="stylesheet" href="css/assembly.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!-- shopping navigation bar-->
+    <nav class='navbar1'>
+      <!-- icon -->
+      <img src="ic_shopping_basket_white_24px.svg" width="50px"
+      position:static alt="shopping basket">
+      <!-- menu -->
+      <ul class="list-group">
+        <li class="list-group-item">Manufacturers</li>
+        <li class="list-group-item">Purchases</li>
+        <li class="list-group-item">Basket Secrets</li>
+      </ul>
+    </nav>
     <!-- Sidebar -->
     <div class="sidebar">
-      <nav class='navbar1'>
-        <p>shopping navigation</p>
-      </nav>
       <nav class="navbar navbar-default">
         <div class="container-fluid clearfix">
           <div class="topright-button" style="float: right">
-            [Add New]
+            <!-- Single button -->
+            <div class="btn-group">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" color=#5cb85c>
+                Add New <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">View History</a></li>
+                <li><a href="#">Email All Manufacturers</a></li>
+                <li><a href="#">Something else here</a></li>
+              </ul>
+            </div>
           </div>
           <div class="navbar-header">
             <a href="#">Manufacturers</a>
@@ -32,6 +51,10 @@
         <h2 class="item-heading">Tandy’s Basketweavers</h2>
         <div>490 Freedom Drive<br>
         Philadelphia, PA 19425</div>
+        <!-- Label -->
+        <span class="mdl-chip mdl-color--red-600 mdl-shadow--2dp">
+            <span class="mdl-chip__text mdl-color-text--white">Low Inventory</span>
+        </span>
       </div>
       <div class="item">
         <h2 class="item-heading">Basket Case</h2>
@@ -54,7 +77,7 @@
         Philadelphia, PA 19107</div>
       </div>
       <div class="sort">
-        Sort by <span class="sort-option selected">A–Z</span> <span class="sort-option">Inventory</span>
+        <strong>Sort by</strong> <span class="sort-option selected">A–Z</span> <span class="sort-option">Inventory</span>
       </div>
     </div>
     <!-- Map -->
@@ -63,9 +86,9 @@
     <script src="js/jquery-2.2.0.js"></script>
     <script src="js/leaflet.js"></script>
     <!-- Choose a frontend framework Javascript file: -->
-    <!-- <script src="js/bootstrap.js"></script> -->
-    <!-- <script src="js/material.js"></script> -->
-    <!-- <script src="js/assembly.js"></script>  -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/material.js"></script>
+    <script src="js/assembly.js"></script>
     <script src="js/setup.js"></script>
   </body>
 </html>
